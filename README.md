@@ -4,7 +4,8 @@ The proposed solution uses an Android mobile application to be installed on the 
 ![capture-20240224-205434](https://github.com/lungu-stefania-paraschiva/SpyKids/assets/102326882/03b5bed8-9995-44ac-8446-57e1deb2626a)
 
 The solution uses a relational database to store user data.
-![capture-20240224-205658](https://github.com/lungu-stefania-paraschiva/SpyKids/assets/102326882/204902b3-ded6-4a73-8886-48b91416bd51)
+![capture-20240224-205658](https://github.com/lungu-stefania-paraschiva/SpyKids/assets/102326882/c812c06e-ff46-4bd4-9bb6-7a552e2e0539)
+
 
 The source code of the application and a document with a brief description of the proposed solution.
 
