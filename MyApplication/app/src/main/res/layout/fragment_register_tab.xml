@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/etxtRegisterFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".04"
+        app:layout_constraintHorizontal_bias=".5"
+        android:hint="First Name"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/texthint"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etxtRegisterLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtRegisterFirstName"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".5"
+        android:hint="Last Name"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/texthint"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etxtRegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/texthint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtRegisterLastName"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/etxtRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtRegisterEmail"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Password"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPassword"
+        android:textColorHint="@color/texthint"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etxtRegisterPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtRegisterPassword"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Phone number"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="phone"
+        android:textColorHint="@color/texthint"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etxtRegisterAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtRegisterPhone"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Age"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/texthint"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupUserType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".02"
+            android:background="@drawable/edit_text_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/etxtRegisterAge"
+            android:checkedButton="@id/rbtnCheckParent">
+
+            <RadioButton
+                android:id="@+id/rbtnCheckParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARENT USER"
+                android:textColorHint="@color/texthint"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <RadioButton
+                android:id="@+id/rbtnCheckChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHILD USER  "
+                android:textColorHint="@color/texthint"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".01"
+        android:text="@string/action_register_short"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textColor="@color/heavywhite"
+        android:background="@drawable/button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupUserType"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

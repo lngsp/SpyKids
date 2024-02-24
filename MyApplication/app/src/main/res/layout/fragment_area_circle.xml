@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapViewCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/area_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etxtCircleAreaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/texthint"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSafeCircleArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Safe area"
+            android:checked="true"
+            android:textColor="@color/darkblue2"
+            android:buttonTint="@color/babyblue3"/>
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10000"
+            android:progress="1000"
+            />
+
+        <Button
+            android:id="@+id/btnDefineCircleArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:text="Define area" />
+
+    </LinearLayout>
+
+</RelativeLayout>

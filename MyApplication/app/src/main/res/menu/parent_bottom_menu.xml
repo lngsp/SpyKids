@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_current_loc"
+        android:icon="@drawable/current_loc"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/bottom_history"
+        android:icon="@drawable/loc_history"
+        android:title="History"/>
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/bottom_new_child"
+        android:icon="@drawable/child"
+        android:title="New child"/>
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home_child"
+        android:icon="@drawable/current_loc"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/bottom_generate_qr"
+        android:icon="@drawable/qrcode"
+        android:title="Generate QR code"/>
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>
